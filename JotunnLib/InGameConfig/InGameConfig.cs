@@ -160,12 +160,14 @@ namespace Jotunn.InGameConfig
 
             var innerWidth = configTab.GetComponent<RectTransform>().rect.width - 25f;
 
+            Dictionary<ConfigDefinition, ConfigEntryBase> duplicateKeybinds = new Dictionary<ConfigDefinition, ConfigEntryBase>();
+
             // Iterate over all dependent plugins (including Jotunn itself)
             foreach (var mod in BepInExUtils.GetDependentPlugins(true))
             {
                 // Create a header if there are any relevant configuration entries
                 // TODO: dont count hidden ones
-                if (GetConfigurationEntries(mod.Value).GroupBy(x => x.Key.Section).Any())
+                if (GetConfigurationEntries(mod.Value).Where(x=>x.Value.IsVisible()).GroupBy(x => x.Key.Section).Any())
                 {
                     // Create module header Text element
                     var text = GUIManager.Instance.CreateText(mod.Key, configTab.transform.Find("Scroll View/Viewport/Content"), new Vector2(0.5f, 0.5f),
@@ -178,7 +180,7 @@ namespace Jotunn.InGameConfig
 
                 // Iterate over all configuration entries (grouped by their sections)
                 // TODO: again, don't show hidden ones, helper function!
-                foreach (var kv in GetConfigurationEntries(mod.Value).GroupBy(x => x.Key.Section))
+                foreach (var kv in GetConfigurationEntries(mod.Value).Where(x=>x.Value.IsVisible()).GroupBy(x => x.Key.Section))
                 {
                     // Create section header Text element
                     var sectiontext = GUIManager.Instance.CreateText("Section " + kv.Key, configTab.transform.Find("Scroll View/Viewport/Content"),
@@ -837,6 +839,22 @@ namespace Jotunn.InGameConfig
                 gameObject.transform.Find("Input").GetComponent<InputField>().readOnly = readOnly;
                 gameObject.transform.Find("Input").GetComponent<InputField>().textComponent.color = readOnly ? Color.grey : Color.white;
             }
+        }
+    }
+
+    public static class ConfigEntryBaseExtension
+    {
+        public static bool IsVisible(this ConfigEntryBase ceb)
+        {
+            var cma = ceb.Description.Tags.FirstOrDefault(x => x is ConfigurationManagerAttributes) as ConfigurationManagerAttributes;
+            if (cma != null)
+            {
+                // if configuration manager attribute is set, check if browsable is not false
+                return cma.Browsable != false;
+            }
+
+            // no configuration manager attribute?
+            return true;
         }
     }
 }

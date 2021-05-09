@@ -91,7 +91,9 @@ public sealed class ConfigurationManagerAttributes
     /// </summary>
     public bool? IsAdvanced;
 
-
+    /// <summary>
+    ///     Sets configuration entry as admin only editable and also synchronizing from server to all clients when used in dedicated mode
+    /// </summary>
     public bool IsAdminOnly
     {
         get => isAdminOnly;
@@ -105,6 +107,9 @@ public sealed class ConfigurationManagerAttributes
         }
     }
 
+    /// <summary>
+    ///     Internally used to unlock entries in Valheim settings menu, so admins can change the value
+    /// </summary>
     public bool UnlockSetting
     {
         get => unlockSetting;
@@ -118,6 +123,8 @@ public sealed class ConfigurationManagerAttributes
             unlockSetting = value;
         }
     }
+
+
 
     /// <summary>
     ///     Custom converter from setting type to string for the built-in editor textboxes.

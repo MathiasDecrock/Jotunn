@@ -12,6 +12,11 @@ namespace Jotunn.Managers
     public class InputManager : IManager
     {
         private static InputManager _instance;
+        
+        // Internal holder for all buttons added via Jotunn
+        internal static Dictionary<string, ButtonConfig> Buttons = new Dictionary<string, ButtonConfig>();
+
+
         public static InputManager Instance
         {
             get
@@ -20,9 +25,10 @@ namespace Jotunn.Managers
                 return _instance;
             }
         }
-        internal static Dictionary<string, ButtonConfig> Buttons = new Dictionary<string, ButtonConfig>();
-
-
+        
+        /// <summary>
+        /// Initialize input manager
+        /// </summary>
         public void Init()
         {
             On.ZInput.Reset += RegisterCustomInputs;
@@ -30,59 +36,81 @@ namespace Jotunn.Managers
             On.ZInput.GetButtonUp += ZInput_GetButtonUp;
         }
 
-        public void AddButton(string modguid, ButtonConfig button)
+        /// <summary>
+        /// Add Button to Valheim
+        /// </summary>
+        /// <param name="modGuid">Mod GUID</param>
+        /// <param name="button">Button config</param>
+        public void AddButton(string modGuid, ButtonConfig button)
         {
-            if (Buttons.ContainsKey(button.Name + "!" + modguid))
+            if (Buttons.ContainsKey(button.Name + "!" + modGuid))
             {
-                Logger.LogError("Cannot have duplicate button: " + button.Name);
+                Logger.LogError($"Cannot have duplicate button: {button.Name} (Mod {modGuid})");
                 return;
             }
 
-            button.Name += "!" + modguid;
+            button.Name += "!" + modGuid;
 
             Buttons.Add(button.Name, button);
         }
 
+        /// <summary>
+        /// Add Button to Valheim
+        /// </summary>
+        /// <param name="modGuid">Mod GUID</param>
+        /// <param name="name">Name</param>
+        /// <param name="key">KeyCode</param>
+        /// <param name="repeatDelay">Repeat delay</param>
+        /// <param name="repeatInterval">Repeat interval</param>
         public void AddButton(
-            string modguid,
+            string modGuid,
             string name,
             KeyCode key,
             float repeatDelay = 0.0f,
             float repeatInterval = 0.0f)
         {
 
-            if (Buttons.ContainsKey(name + "!" + modguid))
+            if (Buttons.ContainsKey(name + "!" + modGuid))
             {
-                Logger.LogError("Cannot have duplicate button: " + name);
+                Logger.LogError($"Cannot have duplicate button: {name} (Mod {modGuid})");
                 return;
             }
 
-            Buttons.Add(name + "!" + modguid, new ButtonConfig()
+            Buttons.Add(name + "!" + modGuid, new ButtonConfig()
             {
-                Name = name + "!" + modguid,
+                Name = name + "!" + modGuid,
                 Key = key,
                 RepeatDelay = repeatDelay,
                 RepeatInterval = repeatInterval
             });
         }
 
+        /// <summary>
+        /// Add button to Valheim
+        /// </summary>
+        /// <param name="modGuid">Mod GUID</param>
+        /// <param name="name">Name</param>
+        /// <param name="axis">Axis</param>
+        /// <param name="inverted">Is axis inverted</param>
+        /// <param name="repeatDelay">Repeat delay</param>
+        /// <param name="repeatInterval">Repeat interval</param>
         public void AddButton(
-            string modguid,
+            string modGuid,
             string name,
             string axis,
             bool inverted = false,
             float repeatDelay = 0.0f,
             float repeatInterval = 0.0f)
         {
-            if (Buttons.ContainsKey(name + "!" + modguid))
+            if (Buttons.ContainsKey(name + "!" + modGuid))
             {
-                Logger.LogError("Cannot have duplicate button: " + name);
+                Logger.LogError($"Cannot have duplicate button: {name} (Mod {modGuid})");
                 return;
             }
 
-            Buttons.Add(name + "!" + modguid, new ButtonConfig()
+            Buttons.Add(name + "!" + modGuid, new ButtonConfig()
             {
-                Name = name + "!" + modguid,
+                Name = name + "!" + modGuid,
                 Axis = axis,
                 Inverted = inverted,
                 RepeatDelay = repeatDelay,
@@ -134,7 +162,7 @@ namespace Jotunn.Managers
             {
                 var btn = pair.Value;
 
-                if (btn.Axis != null && btn.Axis.Length > 0)
+                if (!string.IsNullOrEmpty(btn.Axis))
                 {
                     self.AddButton(btn.Name, btn.Axis, btn.Inverted, btn.RepeatDelay, btn.RepeatInterval);
                 }
