@@ -451,6 +451,7 @@
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="TestMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMod2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

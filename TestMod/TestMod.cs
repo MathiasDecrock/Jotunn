@@ -43,6 +43,7 @@ namespace TestMod
         private Skills.SkillType testSkill;
 
         private ConfigEntry<bool> EnableVersionMismatch;
+        private ConfigEntry<KeyCode> evilSwordAttackButtonConfigEntry;
 
         // Load, create and init your custom mod stuff
         private void Awake()
@@ -188,14 +189,18 @@ namespace TestMod
                 new ConfigDescription("Server side bool", null, new ConfigurationManagerAttributes { IsAdminOnly = true }));
 
             Config.Bind(JotunnTestModConfigSection, "InvisibleInt", 150,
-                new ConfigDescription("Invisible int, testing browsable false", null, new ConfigurationManagerAttributes {Browsable = false}));
+                new ConfigDescription("Invisible int, testing browsable false", null, new ConfigurationManagerAttributes { Browsable = false }));
 
             // Add client config to test ModCompatibility
             EnableVersionMismatch = Config.Bind(JotunnTestModConfigSection, nameof(EnableVersionMismatch), false, new ConfigDescription("Enable to test ModCompatibility module"));
             Config.SettingChanged += Config_SettingChanged;
 
             // Add a client side custom input key for the EvilSword
-            Config.Bind(JotunnTestModConfigSection, "EvilSwordSpecialAttack", KeyCode.B, new ConfigDescription("Key to unleash evil with the Evil Sword"));
+            evilSwordAttackButtonConfigEntry = Config.Bind(JotunnTestModConfigSection, "EvilSwordSpecialAttack", KeyCode.B, new ConfigDescription("Key to unleash evil with the Evil Sword", null, new object[] { new ButtonConfig
+            {
+                Name = "EvilSwordSpecialAttack",
+                HintToken = "$evilsword_beevil"
+            } }));
         }
 
         // React on changed settings
@@ -238,13 +243,8 @@ namespace TestMod
 
             // Add key bindings backed by a config value
             // Create a ButtonConfig to also add it as a custom key hint in AddClonedItem
-            evilSwordSpecial = new ButtonConfig
-            {
-                Name = "EvilSwordSpecialAttack",
-                Key = (KeyCode)Config[JotunnTestModConfigSection, "EvilSwordSpecialAttack"].BoxedValue,
-                HintToken = "$evilsword_beevil"
-            };
-            InputManager.Instance.AddButton(ModGUID, evilSwordSpecial);
+            
+            InputManager.Instance.AddButton(ModGUID, evilSwordAttackButtonConfigEntry);
 
             // Add a key binding to test skill raising
             InputManager.Instance.AddButton(ModGUID, "TestMod_RaiseSkill", KeyCode.Home);
@@ -358,13 +358,13 @@ namespace TestMod
             var steel_prefab = steelingot.LoadAsset<GameObject>("Steel");
             var ingot = new CustomItem(steel_prefab, fixReference: false);
             var blastConversion = new CustomItemConversion(new SmelterConversionConfig
-            { 
+            {
                 Station = "blastfurnace", // Let's specify something other than default here 
                 FromItem = "Iron",
                 ToItem = "Steel" // This is our custom prefabs name we have loaded just above 
             });
             ItemManager.Instance.AddItem(ingot);
-            ItemManager.Instance.AddItemConversion(blastConversion); 
+            ItemManager.Instance.AddItemConversion(blastConversion);
         }
 
 

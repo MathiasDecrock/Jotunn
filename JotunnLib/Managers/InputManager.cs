@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BepInEx.Configuration;
 using UnityEngine;
 using Jotunn.Configs;
+using Jotunn.InGameConfig;
 
 namespace Jotunn.Managers
 {
@@ -34,6 +36,25 @@ namespace Jotunn.Managers
             On.ZInput.Reset += RegisterCustomInputs;
             On.ZInput.GetButtonDown += ZInput_GetButtonDown;
             On.ZInput.GetButtonUp += ZInput_GetButtonUp;
+        }
+
+        /// <summary>
+        /// Add Button to Valheim
+        /// </summary>
+        /// <param name="modGuid">Mod GUID</param>
+        /// <param name="entry">KeyCode configuration entry</param>
+        public void AddButton(string modGuid, ConfigEntry<KeyCode> entry)
+        {
+            ButtonConfig buttonConfig = entry.Description.Tags.FirstOrDefault(x => x is ButtonConfig) as ButtonConfig;
+            if (buttonConfig == null)
+            {
+                throw new Exception($"Configuration entry {entry.Definition.Section}.{entry.Definition.Key} needs to have a ButtonConfig Tag.");
+            }
+
+            // Read value from config
+            buttonConfig.Key = entry.Value ;
+            buttonConfig.Name += "!" + modGuid;
+            Buttons.Add(buttonConfig.Name, buttonConfig);
         }
 
         /// <summary>
