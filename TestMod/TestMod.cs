@@ -243,7 +243,6 @@ namespace TestMod
 
             // Add key bindings backed by a config value
             // Create a ButtonConfig to also add it as a custom key hint in AddClonedItem
-            
             InputManager.Instance.AddButton(ModGUID, evilSwordAttackButtonConfigEntry);
 
             // Add a key binding to test skill raising
