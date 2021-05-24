@@ -1,0 +1,2179 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/JotunnLib",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "DocFX/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "DocFX/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.ButtonConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.ButtonConfig.html",
+          "hash": "U0CstTjR2Cg9AIJ3PTXcRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.ConversionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.ConversionConfig.html",
+          "hash": "FYXj3twcs6G8Nl3IMcU1tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.CookingConversionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.CookingConversionConfig.html",
+          "hash": "U9Hlqgg6MxOnrXQ+0DDc2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.FermenterConversionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.FermenterConversionConfig.html",
+          "hash": "OzMvwehKJTlo0bC7fIn3Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.ItemConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.ItemConfig.html",
+          "hash": "cEQkKVK2HY0ecQQdPt6nww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.KeyHintConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.KeyHintConfig.html",
+          "hash": "4YbFcdSmt2DMNJyhYK/6wA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.LocalizationConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.LocalizationConfig.html",
+          "hash": "DrGGrXB2ZhR2vlGXksoHTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.PieceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.PieceConfig.html",
+          "hash": "RIKoBDJtU/vcrd/xDvd8jw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.RecipeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.RecipeConfig.html",
+          "hash": "+p/yiv6S+EUNYO/xe0MaRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.RequirementConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.RequirementConfig.html",
+          "hash": "Bftv4MM2OjftpgJa4x8f7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.SkillConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.SkillConfig.html",
+          "hash": "/WJfcOB0oZmyZvIDxKwo6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.SmelterConversionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.SmelterConversionConfig.html",
+          "hash": "q/nZipFPp7HDNQKuymqUVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Configs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Configs.html",
+          "hash": "BwMXikyZ/Nf5oPTsmGEsvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.ConsoleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.ConsoleCommand.html",
+          "hash": "SYdu9/hLqq6nRgSPQTeXXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomItem.html",
+          "hash": "4fgYOOT+3Y5ya6PkN1WCdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomItemConversion.ConversionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomItemConversion.ConversionType.html",
+          "hash": "50XeUexbreS0p2vwM4J5cA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomItemConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomItemConversion.html",
+          "hash": "2dR/1I+MLMKAbHdPWBmvPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomPiece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomPiece.html",
+          "hash": "O/b2eTpMxNUFvZdhb405rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomRecipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomRecipe.html",
+          "hash": "n1Z01vui6OqsBbMt28ebVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.CustomStatusEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.CustomStatusEffect.html",
+          "hash": "ORBn2Ynlpohi1qa2mtES5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.Mock-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.Mock-1.html",
+          "hash": "tn9f3vRAmssuqE5OGMImFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.MockRequirement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.MockRequirement.html",
+          "hash": "sm7q1jInjo5IOFVZsJ991A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Entities.html",
+          "hash": "IokgXfHRzUf7cKsga4YQOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.ExposedGameObjectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.ExposedGameObjectExtension.html",
+          "hash": "SmQrivwRmbS0ldqK5VpofQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.GameObjectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.GameObjectExtension.html",
+          "hash": "0cbppN6aUyayrpX8jPNW4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.InGameConfig.InGameConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.InGameConfig.InGameConfig.html",
+          "hash": "UX4sn8yck+cMqpn6lw6gRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.InGameConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.InGameConfig.html",
+          "hash": "xYs/G8f8AD/fzgi3m93fSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.ItemDataExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.ItemDataExtension.html",
+          "hash": "t7LF940CwHBheZ0voNkzbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.ItemDropExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.ItemDropExtension.html",
+          "hash": "cpXB9QdFKCFtR/64pgaWRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Logger.html",
+          "hash": "MjLteWswqcO7iJ7iCkNG4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Main.html",
+          "hash": "dn6gGRHLVX0yzYSrldTGPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.CommandManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.CommandManager.html",
+          "hash": "CWGMcANfQIrWBv+rxTVcoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.GUIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.GUIManager.html",
+          "hash": "sgvqiRD098XHhLTzNbHl3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.InputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.InputManager.html",
+          "hash": "CRZMr0u/dbVbXJJGUzwvZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.ItemManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.ItemManager.html",
+          "hash": "EKLmogoVPjQfeSwyKnaxaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.LocalizationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.LocalizationManager.html",
+          "hash": "XXy5pxmz3k5IW4jSXMjIrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.PieceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.PieceManager.html",
+          "hash": "S5GtQmgcnMqmvgHct5k5wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.PrefabManager.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.PrefabManager.Cache.html",
+          "hash": "JhtnACbDeBt9E0441VClsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.PrefabManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.PrefabManager.html",
+          "hash": "tCfHOKBwdwsU6Ud9DAgd4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.SkillManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.SkillManager.html",
+          "hash": "v82XV5F644rg6bnLSLNjiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.SynchronizationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.SynchronizationManager.html",
+          "hash": "qP3CQ2cxuz3KeVQkeKG81A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Managers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Managers.html",
+          "hash": "vMlCuRARKtmUucU3fG9TZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.PieceExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.PieceExtension.html",
+          "hash": "r5ZkYMDAVkMzuGrJg3Sk3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.PrefabExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.PrefabExtension.html",
+          "hash": "NKZycUJoTwL4asoqAdE/6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.RecipeExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.RecipeExtension.html",
+          "hash": "4Htn2oT7x6OPfNrUwnD6Ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.StatusEffectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.StatusEffectExtension.html",
+          "hash": "qZkz4TAJm3IlHxGs2ezm7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.AssetUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.AssetUtils.html",
+          "hash": "rjrLd6+SC/tDkxzy3WRsfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.BoneReorder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.BoneReorder.html",
+          "hash": "YmvX42PjTfr2FmcwNIqguw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.CompatibilityLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.CompatibilityLevel.html",
+          "hash": "JoFTaaJpn6rD4d6yPQhJbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.ConfigurationSynchronizationEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.ConfigurationSynchronizationEventArgs.html",
+          "hash": "uXUKOlyf5Fh08W1+mQrs3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.HashUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.HashUtils.html",
+          "hash": "Zm1LlG6vSmfcgM8Eg2hPEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.ModCompatibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.ModCompatibility.html",
+          "hash": "5mSIRzH95oOZf2gi2bQWNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.NetworkCompatibilityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.NetworkCompatibilityAttribute.html",
+          "hash": "gEsMg/2EVu7S0SBniTgiFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.PatchInitAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.PatchInitAttribute.html",
+          "hash": "gSam3liHPSHEv7UhjqG67Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.Paths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.Paths.html",
+          "hash": "ntWYdCssIPKKH/op7oTniw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.ReflectionHelper.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.ReflectionHelper.Cache.html",
+          "hash": "j6vm+N+dL8Pyz/Iamo+qeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.ReflectionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.ReflectionHelper.html",
+          "hash": "pPrjyu0T6Teg1hBM4F7ufQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.VersionStrictness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.VersionStrictness.html",
+          "hash": "lD9HvX0BsSpRQkyFhhFv3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.WeightedItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.WeightedItem-1.html",
+          "hash": "kDCx33K58ni7NUFUePWgAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.WeightedList-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.WeightedList-2.html",
+          "hash": "l6skpxF3PrsDYGvWE7ziNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.Utils.html",
+          "hash": "jL5QjRk/svwRiXqUc6aD7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.ZNetExtension.ZNetInstanceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.ZNetExtension.ZNetInstanceType.html",
+          "hash": "AHekzaDFcKuYr5f/GQULfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.ZNetExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.ZNetExtension.html",
+          "hash": "xQElzVSG1VVQSNhZJaR92Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/Jotunn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jotunn.html",
+          "hash": "/al4LYpycx8P/c4NkQ3jyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/SimpleJson.IJsonSerializerStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SimpleJson.IJsonSerializerStrategy.html",
+          "hash": "scmwPdFa1/HDydAj3VhdTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/SimpleJson.PocoJsonSerializerStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SimpleJson.PocoJsonSerializerStrategy.html",
+          "hash": "EDLFCGbFWw2LxplcHE0hJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/SimpleJson.SimpleJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SimpleJson.SimpleJson.html",
+          "hash": "B5gmvrncatJwUad8mh1RMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Documentation/api/SimpleJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SimpleJson.html",
+          "hash": "kAs2OnMdm2NRzLE5gcGd7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "JbA+NVlfacLh+yLwH2DxZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/gui/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/gui/overview.html",
+          "hash": "sN+h/3NbGtv6UlJLoubCmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/gui/sprite-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/gui/sprite-list.html",
+          "hash": "9xRaN/RJq35FzRS539EyWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/input/input-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/input/input-list.html",
+          "hash": "0sKiqvU02wk15G6YgtjY4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/input/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/input/overview.html",
+          "hash": "oZNE9+gZ8TvoVFbodcwh4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/intro.html",
+          "hash": "asVA5dyq5TeL/rWdiGmnwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/objects/item-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/objects/item-list.html",
+          "hash": "J8I8sDj0jjKi+8d+4ZpB7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/objects/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/objects/overview.html",
+          "hash": "d+BVgv5YFTwc8jpWKhqkuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/objects/recipe-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/objects/recipe-list.html",
+          "hash": "wBoPWPtflX+KBmuarAcYsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/pieces/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/pieces/overview.html",
+          "hash": "ifjVB0N0thHMvSpvJlDCgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/pieces/piece-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/pieces/piece-list.html",
+          "hash": "aoMq1RZkkOxQNB7sAoLBVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/pieces/piece-table-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/pieces/piece-table-list.html",
+          "hash": "uX0j0+vc280IFnC0lE23Ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/prefabs/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/prefabs/overview.html",
+          "hash": "LmAg0D8t7ob++bkcWg6Xiw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/prefabs/prefab-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/prefabs/prefab-list.html",
+          "hash": "w8qoFpj08dQli4MnZIta8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/rpc/rpc-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/rpc/rpc-list.html",
+          "hash": "7VaembZE+9LVUqrEEH8oOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/data/status-effects/status-effect-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "data/status-effects/status-effect-list.html",
+          "hash": "RPBqhGR2N4fLgZgFwAjj+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/data/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "data/toc.html",
+          "hash": "Nr44L/wuW5ZMWOXQKxbppg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/guides/guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/guide.html",
+          "hash": "RsQrFmlyL0XDApBFkmsxRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/guides/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/installation.html",
+          "hash": "BQzczuxdMnL7o2mqxSmsDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/guides/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/overview.html",
+          "hash": "tCAZFzuxBeWn5HvOQ6co6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/guides/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/quickstart.html",
+          "hash": "FVH5StkadsBoefm0aMwhBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/guides/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "guides/toc.html",
+          "hash": "2+zBW/ZVJMPzz1bSTHoxPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/banner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/Assets.EmbeddedResource.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/Assets.EmbeddedResource.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/AssetsExtraction.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/AssetsExtraction.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/BluePrintRunePieceTable.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/BluePrintRunePieceTable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/EvilSwordKeyHints.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/EvilSwordKeyHints.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/EvilSwordLocalizations.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/EvilSwordLocalizations.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/EvilSwordStatusEffect.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/EvilSwordStatusEffect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/EvilSwordStatusStart.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/EvilSwordStatusStart.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/EvilSwordStatusStop.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/EvilSwordStatusStop.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/assetMockReference.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/assetMockReference.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/blueprintRecipeConfig.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/blueprintRecipeConfig.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/blueprintRuneItem.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/blueprintRuneItem.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/blueprintRuneLocalizations.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/blueprintRuneLocalizations.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/checkbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/checkbox.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/cube-piece-inv.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/cube-piece-inv.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/cube-piece-world.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/cube-piece-world.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/customClonedItemHover.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/customClonedItemHover.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/customClonedItemPickup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/customClonedItemPickup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/customResourceRecipe.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/customResourceRecipe.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/customSkillRaised.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/customSkillRaised.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/keybind-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/keybind-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/pieceStub.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/pieceStub.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/pieceStubPlaced.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/pieceStubPlaced.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/test-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/test-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/test-item.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/test-item.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/test-prefab.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/test-prefab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/test-recipe.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/test-recipe.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/test-skill.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/test-skill.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/text-element.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/text-element.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/vs-Manage-Nuget.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/vs-Manage-Nuget.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/vs-NugetAddJotunn.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/vs-NugetAddJotunn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/data/woodpanel.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/data/woodpanel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/gh-ForkedStub.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/gh-ForkedStub.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-AddNewProjectToSol.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-AddNewProjectToSol.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-CloneForkedStub.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-CloneForkedStub.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-CreateEmptySolution.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-CreateEmptySolution.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-CreateNewProjectTemplate.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-CreateNewProjectTemplate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-CreateProjFromTemplateEnvironmentPropersError.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-CreateProjFromTemplateEnvironmentPropersError.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-InstallerComponents.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-InstallerComponents.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-ProjectTemplateLocationpng.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-ProjectTemplateLocationpng.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-UserProjectTemplatesLoc.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-UserProjectTemplatesLoc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-bepinex-assemblies.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-bepinex-assemblies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-create-proj.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-create-proj.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-solutionReferences.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-solutionReferences.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/getting-started/vs-valheim-assemblies.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/getting-started/vs-valheim-assemblies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/bepinex.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/bepinex.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/config.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/config.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/downloads.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/downloads.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/in-game.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/in-game.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/patchers.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/patchers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/installation/plugins.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/installation/plugins.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/ConfigManagerUI.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/ConfigManagerUI.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/NetworkCompatClient-gr-Server.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/NetworkCompatClient-gr-Server.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/NetworkCompatClientMissingModule.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/NetworkCompatClientMissingModule.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/NetworkCompatClientsideAdditional.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/NetworkCompatClientsideAdditional.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/NetworkCompatServer-gr-Client.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/NetworkCompatServer-gr-Client.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/PostBoneReorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/PostBoneReorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Documentation/images/utils/PreBoneReorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "Documentation/images/utils/PreBoneReorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "19PPNAAL0rkmEG3xr3jy+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "t/2UF/0J/Z8Qr+0XolBTaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/assets.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/assets.html",
+          "hash": "HCJQeKy8+XgcrzRkoBNIXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/overview.html",
+          "hash": "ejsJHUGFS+ENhCpgnVSu7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/prefabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/prefabs.html",
+          "hash": "t99xjiYsU2DuDKxxewQbVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/register-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/register-events.html",
+          "hash": "xquTo73/9nDiZeC/RSWvKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/renaming.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/renaming.html",
+          "hash": "FgVq/kY8ctsoBxsXX/yZSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/jotunnlib/vs-project.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/jotunnlib/vs-project.html",
+          "hash": "4UAqdhLDV0sLVkwmt/ZN8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/overview.html",
+          "hash": "paTTKlEEbI8LzQkoR7Idpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/skillinjector/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/skillinjector/overview.html",
+          "hash": "LR9FoNTxTfXVhDbhnw7DzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/transition/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "transition/toc.html",
+          "hash": "Yd8Yk12cCIEv8tBRF2WqTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/valheimlib/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/valheimlib/overview.html",
+          "hash": "5v+lsdzZbbcZTZuLSUKQXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/transition/valheimlib/vs-project.md",
+      "output": {
+        ".html": {
+          "relative_path": "transition/valheimlib/vs-project.html",
+          "hash": "3XuAyO2/3KAkeyaNYc2qVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/asset-creation.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/asset-creation.html",
+          "hash": "zh7VYzbPkrz8gcnOoreOmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/asset-loading.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/asset-loading.html",
+          "hash": "fwkUEzomSiyPQwEpCEzkkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/asset-mocking.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/asset-mocking.html",
+          "hash": "XVg84I9Sj6txF/rUXSbCfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/bonereorder.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/bonereorder.html",
+          "hash": "cvVONEaw3BzKy63/u7OfHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/config.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/config.html",
+          "hash": "Zt3MhxM+KGZlxD3oA82OIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/console-commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/console-commands.html",
+          "hash": "nwpvJ67Xr/Qdzw1EvC/8KQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/gui.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/gui.html",
+          "hash": "yOrtjoDuyFYBlcJuvCgFHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/inputs.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/inputs.html",
+          "hash": "mkA89lCKK9dh0ZgtBZRz3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/item-conversions.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/item-conversions.html",
+          "hash": "GiVWEro9qujWejFH/wDSJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/items.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/items.html",
+          "hash": "XjVYB5zFlcoT0a0s4wXA9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/localization.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/localization.html",
+          "hash": "sD17MSLtA8GjgHiJjAadqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/networkcompatibility.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/networkcompatibility.html",
+          "hash": "At0c4758DGexoKYy1JUSzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/overview.html",
+          "hash": "Lchkt14IMfOgVh0R1w6L2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/pieces.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/pieces.html",
+          "hash": "JGsZ1vrS21SYi7Ft9dzWIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/recipes.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/recipes.html",
+          "hash": "KS1He0vLrw/mnhns1Wc1xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/skills.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/skills.html",
+          "hash": "OTNzd8Zo7nbirUjuuxYulw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/tutorials/status-effects.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/status-effects.html",
+          "hash": "wqFfJsk4b48M7Sc/KjIZNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "4JQZshIriKYExz9oQYxcFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 47,
+          "skipped_file_count": 47
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 46
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
