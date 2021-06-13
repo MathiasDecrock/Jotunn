@@ -279,3 +279,4 @@ kitbashObject.OnKitbashApplied += () =>
 };
 ```
 
+![Odin Statue](../images/data/odinStatue.webm)
