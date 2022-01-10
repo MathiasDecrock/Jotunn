@@ -46,12 +46,7 @@ namespace Jotunn.Entities
         {
             Prefab = exteriorPrefab;
             Name = exteriorPrefab.name;
-
-            ZoneLocation = locationConfig.GetZoneLocation();
-            ZoneLocation.m_prefab = exteriorPrefab;
-            ZoneLocation.m_prefabName = exteriorPrefab.name;
-            ZoneLocation.m_netViews.AddRange(exteriorPrefab.GetComponentsInChildren<ZNetView>(true));
-
+            
             if (exteriorPrefab.TryGetComponent<Location>(out var location))
             {
                 Location = location;
@@ -64,6 +59,12 @@ namespace Jotunn.Entities
                 Location.m_clearArea = locationConfig.ClearArea;
                 Location.m_interiorPrefab = interiorPrefab;
             }
+
+            ZoneLocation = locationConfig.GetZoneLocation();
+            ZoneLocation.m_prefab = exteriorPrefab;
+            ZoneLocation.m_prefabName = exteriorPrefab.name;
+            ZoneLocation.m_hash = exteriorPrefab.name.GetStableHashCode();
+            ZoneLocation.m_location = Location;
         }
     }
 }

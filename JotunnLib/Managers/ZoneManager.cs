@@ -95,21 +95,26 @@ namespace Jotunn.Managers
         /// <returns></returns>
         public bool AddCustomLocation(CustomLocation customLocation)
         {
-            if (Locations.TryGetValue(customLocation.Name, out CustomLocation existingLocation))
+            if (Locations.ContainsKey(customLocation.Name))
             {
                 Logger.LogWarning($"Location {customLocation.Name} already exists");
                 return false;
             }
 
             customLocation.Prefab.transform.SetParent(LocationContainer.transform);
-            foreach (var zNetView in customLocation.ZoneLocation.m_netViews)
+
+            foreach (var znet in customLocation.Prefab.GetComponentsInChildren<ZNetView>(true))
             {
-                if (!PrefabManager.Instance.Prefabs.ContainsKey(zNetView.gameObject.name.GetStableHashCode()))
+                if (!PrefabManager.Instance.GetPrefab(global::Utils.GetPrefabName(znet.gameObject)))
                 {
-                    PrefabManager.Instance.AddPrefab(zNetView.gameObject);
+                    ZNetView.m_forceDisableInit = true;
+                    var prefab = Object.Instantiate(znet.gameObject);
+                    ZNetView.m_forceDisableInit = false;
+                    prefab.name = global::Utils.GetPrefabName(znet.gameObject);
+                    PrefabManager.Instance.AddPrefab(prefab);
                 }
             }
-
+            
             Locations.Add(customLocation.Name, customLocation);
             return true;
         }
@@ -145,7 +150,7 @@ namespace Jotunn.Managers
         /// <returns></returns>
         public GameObject CreateLocationContainer(string name)
         {
-            GameObject container = new GameObject()
+            GameObject container = new GameObject
             {
                 name = name
             };
@@ -163,12 +168,22 @@ namespace Jotunn.Managers
         {
             var locationContainer = Object.Instantiate(gameObject, LocationContainer.transform);
             locationContainer.name = gameObject.name;
+            locationContainer.transform.SetParent(LocationContainer.transform);
             if (fixLocationReferences)
             {
                 locationContainer.FixReferences(true);
             }
-
+            
             return locationContainer;
+
+            // gameObject.transform.SetParent(LocationContainer.transform);
+            //
+            // if (fixLocationReferences)
+            // {
+            //     gameObject.FixReferences(true);
+            // }
+            //
+            // return gameObject;
         }
 
         /// <summary>
@@ -245,19 +260,28 @@ namespace Jotunn.Managers
 
                         var zoneLocation = customLocation.ZoneLocation;
                         self.m_locations.Add(zoneLocation);
+                        //zoneLocation.m_prefab = customLocation.Prefab;
+                        //zoneLocation.m_hash = zoneLocation.m_prefab.name.GetStableHashCode();
+                        //zoneLocation.m_location = customLocation.Location;
 
-                        zoneLocation.m_prefab = customLocation.Prefab;
-                        zoneLocation.m_hash = zoneLocation.m_prefab.name.GetStableHashCode();
-                        Location location = customLocation.Location;
-                        zoneLocation.m_location = location;
-                        if (Application.isPlaying)
+                        ZoneSystem.PrepareNetViews(zoneLocation.m_prefab, zoneLocation.m_netViews);
+                        
+                        // foreach (var zNetView in zoneLocation.m_netViews)
+                        // {
+                        //     int hash = zNetView.gameObject.name.GetStableHashCode();
+                        //
+                        //     if (!ZNetScene.instance.m_namedPrefabs.ContainsKey(hash))
+                        //     {
+                        //         ZNetScene.instance.m_prefabs.Add(zNetView.gameObject);
+                        //         ZNetScene.instance.m_namedPrefabs.Add(hash, zNetView.gameObject);
+                        //     }
+                        // }
+
+                        ZoneSystem.PrepareRandomSpawns(zoneLocation.m_prefab, zoneLocation.m_randomSpawns);
+                        
+                        if (!self.m_locationsByHash.ContainsKey(zoneLocation.m_hash))
                         {
-                            ZoneSystem.PrepareNetViews(zoneLocation.m_prefab, zoneLocation.m_netViews);
-                            ZoneSystem.PrepareRandomSpawns(zoneLocation.m_prefab, zoneLocation.m_randomSpawns);
-                            if (!self.m_locationsByHash.ContainsKey(zoneLocation.m_hash))
-                            {
-                                self.m_locationsByHash.Add(zoneLocation.m_hash, zoneLocation);
-                            }
+                            self.m_locationsByHash.Add(zoneLocation.m_hash, zoneLocation);
                         }
                     }
                     catch (Exception ex)
