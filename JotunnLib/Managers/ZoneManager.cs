@@ -101,20 +101,19 @@ namespace Jotunn.Managers
                 return false;
             }
 
-            customLocation.Prefab.transform.SetParent(LocationContainer.transform);
-
+            customLocation.Prefab.transform.SetParent(LocationContainer.transform); 
             foreach (var znet in customLocation.Prefab.GetComponentsInChildren<ZNetView>(true))
             {
-                if (!PrefabManager.Instance.GetPrefab(global::Utils.GetPrefabName(znet.gameObject)))
+                var prefabName = global::Utils.GetPrefabName(znet.gameObject);
+                if (!PrefabManager.Instance.GetPrefab(prefabName))
                 {
-                    ZNetView.m_forceDisableInit = true;
-                    var prefab = Object.Instantiate(znet.gameObject);
-                    ZNetView.m_forceDisableInit = false;
-                    prefab.name = global::Utils.GetPrefabName(znet.gameObject);
-                    PrefabManager.Instance.AddPrefab(prefab);
+                    var prefab = Object.Instantiate(znet.gameObject, PrefabManager.Instance.PrefabContainer.transform);
+                    prefab.name = prefabName;
+                    Logger.LogDebug($"Adding unique prefab {prefab.name} from location {customLocation.Name}");
+                    PrefabManager.Instance.RegisterToZNetScene(prefab);
                 }
-            }
-            
+            } 
+
             Locations.Add(customLocation.Name, customLocation);
             return true;
         }
@@ -173,7 +172,7 @@ namespace Jotunn.Managers
             {
                 locationContainer.FixReferences(true);
             }
-            
+
             return locationContainer;
 
             // gameObject.transform.SetParent(LocationContainer.transform);
@@ -265,7 +264,7 @@ namespace Jotunn.Managers
                         //zoneLocation.m_location = customLocation.Location;
 
                         ZoneSystem.PrepareNetViews(zoneLocation.m_prefab, zoneLocation.m_netViews);
-                        
+
                         // foreach (var zNetView in zoneLocation.m_netViews)
                         // {
                         //     int hash = zNetView.gameObject.name.GetStableHashCode();
@@ -278,7 +277,7 @@ namespace Jotunn.Managers
                         // }
 
                         ZoneSystem.PrepareRandomSpawns(zoneLocation.m_prefab, zoneLocation.m_randomSpawns);
-                        
+
                         if (!self.m_locationsByHash.ContainsKey(zoneLocation.m_hash))
                         {
                             self.m_locationsByHash.Add(zoneLocation.m_hash, zoneLocation);

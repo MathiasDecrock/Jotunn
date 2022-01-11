@@ -24,7 +24,7 @@ namespace Jotunn.Managers
         /// <summary>
         ///     Hide .ctor
         /// </summary>
-        private PrefabManager() {}
+        private PrefabManager() { }
 
         /// <summary>
         ///     Event that gets fired after the vanilla prefabs are in memory and available for cloning.
@@ -58,7 +58,7 @@ namespace Jotunn.Managers
             PrefabContainer = new GameObject("Prefabs");
             PrefabContainer.transform.parent = Main.RootObject.transform;
             PrefabContainer.SetActive(false);
-            
+
             On.ZNetScene.Awake += RegisterAllToZNetScene;
             SceneManager.sceneUnloaded += (current) => Cache.ClearCache();
 
@@ -360,7 +360,7 @@ namespace Jotunn.Managers
                 }
             }
         }
-        
+
         /// <summary>
         ///     Safely invoke the <see cref="OnVanillaPrefabsAvailable"/> event
         /// </summary>
@@ -371,7 +371,7 @@ namespace Jotunn.Managers
 
             orig(self, other);
         }
-        
+
         private void InvokeOnPrefabsRegistered(On.ZNetScene.orig_Awake orig, ZNetScene self)
         {
             orig(self);
@@ -443,9 +443,22 @@ namespace Jotunn.Managers
             private static void InitCache(Type type, Dictionary<string, Object> map = null)
             {
                 map ??= new Dictionary<string, Object>();
-                foreach (var unityObject in Resources.FindObjectsOfTypeAll(type))
+                if (type == typeof(GameObject))
                 {
-                    map[unityObject.name] = unityObject;
+                    foreach (GameObject gameObject in Resources.FindObjectsOfTypeAll<GameObject>())
+                    {
+                        if(gameObject.scene.name == null && gameObject.transform.parent == null) //TODO: Still captures _JotunnRoot and BepInEx containers ... 
+                        {
+                            map[gameObject.name] = gameObject;
+                        }
+                    }
+                }
+                else
+                {
+                    foreach (var unityObject in Resources.FindObjectsOfTypeAll(type))
+                    {
+                        map[unityObject.name] = unityObject;
+                    }
                 }
 
                 dictionaryCache[type] = map;

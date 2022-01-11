@@ -102,7 +102,7 @@ namespace TestMod
             PrefabManager.OnVanillaPrefabsAvailable += AddItemsWithRenderedIcons;
 
             //ZoneManager.OnVanillaLocationsAvailable += ModifyVanillaLocationsAndVegetation;
-            //ZoneManager.OnVanillaLocationsAvailable += AddCustomLocationsAndVegetation;
+            //ZoneManager.OnVanillaLocationsAvailable += AddCustomLocationsAndVegetation;  
             ZoneManager.OnVanillaLocationsAvailable += ZoneManager_OnVanillaLocationsAvailable;
 
             // Test config sync event
@@ -132,8 +132,9 @@ namespace TestMod
             // Hook GetVersionString for ext version string compat test
             On.Version.GetVersionString += Version_GetVersionString;
         }
+
         private void ZoneManager_OnVanillaLocationsAvailable()
-        {
+        {  
             // Load asset bundle from the filesystem
             var guardianstoneAssetBundle = AssetUtils.LoadAssetBundleFromResources("guardianstones", typeof(TestMod).Assembly);
 
@@ -158,7 +159,7 @@ namespace TestMod
                 MinAltitude = 1f,
                 ClearArea = true
             }));
-          
+
 
             ZoneManager.OnVanillaLocationsAvailable -= ZoneManager_OnVanillaLocationsAvailable;
         }

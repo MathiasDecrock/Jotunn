@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using HarmonyLib;
+using Jotunn.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -43,8 +44,55 @@ namespace Jotunn.DebugUtils
                 }
                 catch (Exception) { }
             };
-            On.ZNet.RPC_ClientHandshake += ProvidePasswordPatch; 
-            Harmony.CreateAndPatchAll(typeof(Debug_isDebugBuild)); 
+            On.ZNet.RPC_ClientHandshake += ProvidePasswordPatch;
+            On.ZNetScene.CreateObject += ZNetScene_CreateObject;
+            On.CreatureSpawner.Awake += CreatureSpawner_Awake;
+            On.ZNetView.Awake += ZNetView_Awake;
+            Harmony.CreateAndPatchAll(typeof(Debug_isDebugBuild));
+        }
+
+        private void ZNetView_Awake(On.ZNetView.orig_Awake orig, ZNetView self)
+        {
+            if (ZNetView.m_forceDisableInit || ZDOMan.instance == null)
+            {
+                Logger.LogDebug($"ZNetView {self.name} self-destructing");
+            }
+            orig(self);
+        }
+
+        private void CreatureSpawner_Awake(On.CreatureSpawner.orig_Awake orig, CreatureSpawner creatureSpawner)
+        {
+            try
+            {
+                orig(creatureSpawner);
+            }
+            catch (Exception e)
+            {
+                Logger.LogWarning($"Error while loading CreatureSpawner {creatureSpawner.name}: {e}");
+            }
+        }
+
+        private GameObject ZNetScene_CreateObject(On.ZNetScene.orig_CreateObject orig, ZNetScene self, ZDO zdo)
+        {
+            int prefab = zdo.GetPrefab();
+            if (prefab == 0)
+            {
+                Logger.LogWarning("zdo prefab is 0");
+            }
+            GameObject prefab2 = self.GetPrefab(prefab);
+            if (prefab2 == null)
+            {
+                Logger.LogWarning($"Prefab {prefab} ({"Cube".GetStableHashCode()}) not found in ZNetScene");
+                foreach(var knownPrefab in PrefabManager.Instance.Prefabs.Values)
+                {
+                    if((knownPrefab.Prefab.name + " (1)").GetStableHashCode() == prefab)
+                    {
+                        Logger.LogWarning($"Found match for {knownPrefab.Prefab.name}");
+                    }
+                }
+                
+            }
+            return orig(self, zdo);
         }
 
         private void Update()
